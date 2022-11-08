@@ -9,10 +9,6 @@ class ToDoAdmin(admin.ModelAdmin):
     list_editable = ("is_published",)
     list_filter = ("is_published",)
 
-#
-# class BoardAdmin(admin.ModelAdmin):
-#     list_display = ("id", "status")
-
 
 admin.site.register(Task, ToDoAdmin)
-# admin.site.register(Board, BoardAdmin)
+
